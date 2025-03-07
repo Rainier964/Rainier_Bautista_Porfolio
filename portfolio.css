@@ -1,0 +1,860 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif; 
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .navbar {
+        background-image: url(./gradient_blue.png);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        bottom: 93%;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        font-weight: bold;
+        gap: 50px;
+        margin-right: 15px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    #miya {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        top: 0;
+        margin-top: -4px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        margin: -15px 5px;
+        
+    }
+
+    #miya:hover {
+        color: #F4A261;
+    }
+
+    .nav-links li {
+        margin: 0 30px;
+        
+    }
+
+    #miya:hover, .nav-links a:hover {
+        color: #F4A261;
+    }
+
+    header {
+        padding: 50px;
+        margin-bottom: -65px;
+        
+    }
+
+    #Rainier {
+        
+        background-size: cover;
+        padding: 125px;
+        background-image: url(./gradient_blue.png);
+        animation: floatDown 3s ease-in-out;
+    }
+
+    @keyframes floatDown {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .main-content {
+        text-align: left;
+        margin-left: -130px;
+        
+    }
+
+    h1 {
+        font-size: 95px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500px;
+        animation: slideLeft 3s ease-in-out;
+        color: white;
+    }
+
+    @keyframes slideLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    h1:hover {
+        color: #F4A261;
+    }
+
+    .main-content p {
+        font-size: 25px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        color: white;
+        animation: typing 8s;
+    }
+
+
+
+    .profile {
+        float: right;
+        margin-top: -500px;
+        display: flexbox;
+        height: autopx;
+        margin-right: -210px;
+    }
+
+    #window {
+        display: none;
+    }
+
+
+    #cv {
+        
+        font-size: 20px;
+        margin-right: 485px;
+        margin-top: -20px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .main-content a:hover {
+        color: #F4A261;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 355px;
+        background-color: #17627E;
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 10px 20px;
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+
+    #mikha {
+        background-size: cover;
+        padding: 10px;
+        background-image: url(./aboutimg.png);
+        
+    }
+
+    #mikha header {
+        padding: 90px;
+        margin-bottom: -135px;
+    }
+
+    .about {
+        margin-left: 700px;
+        text-align: left;
+    }
+
+    .aaboutmeimg {
+        display: flexbox;
+        margin-left: -1200px;
+        margin-top: -485px;
+        transition: transform 0.5s ease;
+    }
+
+    .aaboutmeimg:hover {
+        transform: rotate(-5deg);
+    }
+
+    .about h2 {
+        font-size: 70px;
+        padding-bottom: 30px;
+        color: #17627E;
+    }
+
+    .about h2:hover {
+        color: #F4A261;
+    }
+
+    .about p {
+        font-size: 20px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        margin-right: 230px;  
+    }
+
+
+    #education {
+        background-color: #0a3348;
+        color: white;
+        padding: 30px;
+        padding-bottom: 90px;
+        background-image: url(./ulit.png);
+    }
+
+    #education h2 {
+        font-size: 70px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        text-align: center;
+        
+    }
+
+    #education h2:hover {
+        color: #F4A261;
+    }
+
+    .school {
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    
+    }
+
+    .school1 {
+        display: flex;
+        text-align: center;
+        gap: 180px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-bottom: 70px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    #line {
+        color: white;
+        margin-left: 200px;
+        margin-bottom: 30px;
+        color: #F4A261;
+    }
+
+    .school-logo {
+        display: flex;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    #ncst {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #ncst:hover {
+        transform: scale(1.2);
+    }
+
+    #eac {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #eac:hover {
+        transform: scale(1.2);
+    }
+
+    #jude1 {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #jude1:hover {
+        transform: scale(1.2);
+    }
+
+    #jude2 {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #jude2:hover {
+        transform: scale(1.2);
+    }
+
+    #qualifications {
+    background-image: url(./qualificationsbg.png);
+        background-size: cover;
+        padding: 30px;
+        padding-bottom: 80px;
+    }
+
+    #qualifications h2 {
+        font-size: 70px;
+        padding-top: 30px;
+        text-align: left;
+        color: #17627E;
+        font-weight: bolder;
+        padding-bottom: 60px;
+
+    }
+
+    #qualifications h2:hover {
+        color: #F4A261;
+    }
+
+    #skills {
+        transition: transform 0.3s ease;
+    }
+
+    #skills:hover {
+        transform: translateY(-50px);
+    }
+
+    #interests {
+        transition: transform 0.3s ease;
+    }
+
+    #interests:hover {
+        transform: translateY(-50px);
+    }
+
+    #hobbies {
+        transition: transform 0.3s ease;
+    }
+
+    #hobbies:hover {
+        transform: translateY(-50px);
+    }
+
+    .aiah {
+        display: flex;
+        font-size: 40px;
+        gap: 100px;
+        justify-content: center;
+        flex-wrap: wrap
+    }
+
+    .service-box:hover {
+        background: #F4A261;
+    }
+
+    .aiah h3 {
+        padding-bottom: 30px;
+    }
+
+    .service-box {
+        background: #17627E;
+        color: white    ;
+        padding: 30px;
+        border-radius: 20px;
+        width: 500px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    #skill {
+        
+        padding: 0px;
+        border-radius: 10px;
+        width: 500px;
+        margin-left: 20px;
+    }
+
+    .service-box p {
+        padding: 5px;
+    }
+
+    #contacts {
+        padding: 30px;
+        background: #0a3348;
+        overflow: hidden;
+        color: white;
+        padding-bottom: 30px;
+        text-align: left;
+        padding-bottom: 90px;
+        display: flex;
+        background-image: url(./contactbg.png);
+    }
+
+    #ig, #fb, #gml, #tk {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #ig:hover, #fb:hover,  #gml:hover, #tk:hover {
+        transform: scale(1.2);
+    }
+
+
+    #contacts h2 {
+        font-size: 70px;
+        padding-bottom: 60px;
+    }
+
+    #contacts h2:hover {
+        color: #F4A261;
+    }
+
+    #contactlogo {
+        margin-left: 133px;
+    }
+
+
+
+    .form {
+        background: #17627E;
+        border-radius: 20px;
+        margin-left: 300px;
+        width: 40%;
+        padding: 30px;
+        
+    }
+
+    .form:hover {
+        background: #F4A261;
+    }
+
+    .form h3 {
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+    .form input, textarea {
+        width: 100%;
+        background: #0a3348;
+        border: none;
+        color: white;
+        font-size: 25px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    textarea {
+        height: 200px;
+        resize: none;
+        
+    }
+
+    .form button {
+        width: 100%;
+        font-size: 25px;
+        background: #0a3348;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    footer {
+        background-color: #0a3348;
+        background-image: url(./contactbg.png);
+        font-size: 30px;
+        color: white;
+        padding: 30px;
+    }
+
+    footer:hover {
+        color: #F4A261;
+    }
+
+
+
+    /* For Responsiveness */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            background-position: auto;
+            background-image: url(./gradient_blue.png);
+            margin-bottom: -154px;
+            position: relative;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            gap: 3px;
+            margin-left: 25px;
+        }
+
+    
+
+        .main-content h1 {
+            flex-direction: column;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        .main-content p {
+            display: none;
+        }
+
+        #window {
+            display:grid;
+            position: relative;
+            left: -240px;
+            width: 500px;
+            height: 500px;
+            bottom: 350px;
+            pointer-events: none;
+        }
+
+        #cv {
+            flex-direction: column;
+            text-align: center;
+            margin-left: -180px;
+            margin-right: -180px;
+            margin-bottom: 5px;
+            position: relative;
+            top: 20rem;
+        }
+
+       #Rainier {
+        margin-bottom: -250px;
+       
+       }
+
+        .main-content a {
+            position: relative;
+            top: 15rem;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #mikha {
+            position: relative;
+            padding-bottom: -50px;
+            
+        }
+
+        #about-me {
+            margin-left: -770px;
+            margin-top: -50px;
+            color: #F4A261;
+        }
+
+        #about-me2 {
+            margin-left: -770px;
+            font-size: 1rem;
+            margin-right: 450px;
+            border-radius: 15px;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));;
+            padding: 15px  ;
+            margin-bottom: -600px;
+        }
+
+    
+
+        #education {
+            flex-direction: column;
+            margin-bottom: -710px;
+        }
+
+        #education h2 {
+            margin-left: -60px;
+            margin-top: -50px;
+            color: #F4A261;
+        }
+
+        #education .logo {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .school {
+            flex-wrap: wrap ;
+            align-content: center;
+        }
+
+        .school1 {
+            flex-wrap: wrap;
+        }
+
+        #line {
+            display: none;
+        }
+
+        .logo {
+            margin-left: -55px;
+            padding-bottom: 30px;
+        }
+
+        #ncst {
+            margin-top: -1230px;
+            left: -40px;
+        position: relative;
+        }
+
+        #shs {
+            padding-top: 500px;
+            position: relative;
+            top: -170px;
+        font-size: 40px;
+    
+        left: -90px;
+        margin-right: -200px;
+            
+        }
+
+        #ncstpresent {
+            margin-top: -1860px;
+            position: relative;
+            left: -15px;
+            margin-right: -30px
+        }
+
+        #college {
+            margin-left: -90px;
+            margin-right: -100px;
+            font-size: 40px;
+        }
+
+        #eac {
+            position: relative;
+            top: -700px;
+            left: -115px;
+            margin-left: -100px;
+        }
+
+        #eacpresent {
+            position: relative;
+            top: -1345px;
+            left: 10px;
+        }
+
+        #hs {
+            position: relative;
+            bottom: -150px;
+            left: -70px;
+        }
+
+        #elem {
+            position: relative;
+            bottom: -400px;
+            left: -15px;
+        }
+
+        #jude1 {
+            position: relative;
+            top: -455px;
+            left: -13px;
+        }
+
+        #judepresent {
+            position: relative;
+            top: -1010px;
+            margin-right: -30px;
+            margin-left: -30px;
+            left: 35px;
+        }
+
+        #jude2 {
+            position: relative;
+            top: -260px;
+            left: 40px;
+        }
+
+        #judepresent2 {
+            position: relative;
+            top: -690px;
+            left: 10px;
+        }
+
+        /* QUALIFICATION SECTION */
+
+        #qualifications {
+            flex-direction: column;
+            background-image: none;
+            background-image: url(qualificationsbg.png);
+        }
+
+        #qualifications h2 {
+            position: relative;
+            left: -60px;
+            font-size: 50px;
+            top: -50px;
+            color: #F4A261;
+        }
+
+    .service-box {
+        font-size: 20px;
+        width: 100rem;
+        position: relative;
+        margin-left: -50px;
+        margin-right: -50px;
+        top: -50px;
+        margin-bottom: -70px;
+    }
+
+    /* CONTACT SECTION */
+    
+    #contacts h2 {
+            position: relative;
+            margin-right: -500px;
+            font-size: 50px;
+            color: #F4A261;
+            left: -35px;
+    }
+
+    #contactlogo {
+            position: relative;
+            top: 580px;
+            display: flex;
+            left: -170px;
+            padding-bottom: 50px;
+            gap: 10px;
+    }
+
+    #contactlogo img {
+        width: 60px;
+        
+    }
+
+    #contacts {
+        position: relative;
+        display: grid;
+    }
+
+    .form {
+        position: relative;
+        top: -150px;
+        left: -300px;
+        width: 60%;
+        
+    }
+        
+    .form input, textarea {
+        font-size: 15px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+    
+    footer {
+        font-size: 20px;
+    }
+
+    .button {
+        position: relative;
+        left: -328px;
+        top: -30px;
+        margin-right: -500px;
+    }
+
+
+
+
+
+
+
+
+        
+        .nav-links {
+            text-align: center;
+            flex-direction: column;
+            padding: -50px;
+            gap: 10px;
+
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
